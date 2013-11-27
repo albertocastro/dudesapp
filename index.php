@@ -1,7 +1,7 @@
 <?php session_start(); //include( "PHP/conection.php"); 
 include( "PHP/bloqueDeSeguridad.php"); //pruebas //$_SESSION[ 'User_Id']=1; ?>
 
-NLA BNLALVD SVDS
+NUEVO 
 <!DOCTYPE html>
 <html>
 
