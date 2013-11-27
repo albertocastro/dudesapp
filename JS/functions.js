@@ -2,7 +2,7 @@ var conversacionId;
 var lastid;
 //funcion inicial
 $(function () {
-
+    
     getContacts();
     $("#elboton").on('click', manejadorElBoton);
     $("#navicon").on('click', manejadornavicon);

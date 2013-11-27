@@ -1,6 +1,5 @@
 <?php
  include("PHP/conection.php");
-
 //COMPRUEBA QUE EL USUARIO ESTA AUTENTICADO
 if ($_SESSION["verificado"] == "NO" || empty($_SESSION["verificado"]) ) {
 
