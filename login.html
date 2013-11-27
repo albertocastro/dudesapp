@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+        <script src="JS/login.js">
+            
+        </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    </head>
+    
+    <body>
+      
+             <div class="box" id="login">
+            <img id="logologin" src="images/logo_dudesapp.png" >
+            <br>
+            <h1 id="hdude">Log in</h1>
+       
+       
+           
+                        <input id="tbUserName"  class="textbox"  onfocus="ClearTextBox(this);" onblur="ClearTextBoxBlur(this)" type="text" value="Dude-name" >
+                  <br>
+                   
+                        <input id="tbPasswd"  class="textbox" onfocus="ClearTextBox(this);" onblur="ClearTextBoxBlur(this)" type="text" value="Password" >
+                    
+            <br>
+            <br>
+            <a href="#" data-transition="pop" class="button" onclick="login($('#tbUserName').val(),$('#tbPasswd').val(),'login');">Iniciar Sesion</a>
+            <br>
+            <br>
+            <a href="#" class="link" onclick="signupPopUp();$('#hdude').css('color','black');">Create a dude account</a>
+        </div>
+        <div id="screen">
+            <div class="box" id="signup">
+
+               <input type="text" id="username" onfocus="ClearTextBox(this);" onblur="ClearTextBoxBlur(this)" value="Username">
+                
+                <input type="text" id="email" onfocus="ClearTextBox(this);" onblur="ClearTextBoxBlur(this)" value="Email">
+                <input type="text" id="password" onfocus="ClearTextBox(this);" onblur="ClearTextBoxBlur(this)" value="Password">
+                <input type="text" id="Retype" onfocus="ClearTextBox(this);" onblur="ClearTextBoxBlur(this)" value="Retype password" style="border-bottom:2px solid #489d36;">
+                            <br><br>
+                 <a href="#" id="cancelsignup" class="button" onclick="$('#screen').fadeOut('1000');$('#hdude').css('color','white');" style="float:right">Cancel :(</a> 
+                          <a href="#" class="button" onclick="signup();" style="float:right;margin-right:10px;">Register : )</a>
+               
+                
+                        
+            </div>
+        </div>
+    </body>
+
+</html>
